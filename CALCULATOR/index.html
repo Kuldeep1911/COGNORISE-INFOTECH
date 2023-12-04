@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+    <h1 class="head" style="position: absolute;margin-bottom: 580px;font-size: 80px;font-family: Georgia, 'Times New Roman', Times, serif;">CALCULATOR</h1>
+    <div class="toggleBtn"></div>
+    
+    <div class="calculator">
+        <div class="buttons">
+            <input class="value" placeholder="00" id="outputscreen"></input>
+            <button  onclick="Clear()">AC</button>
+            <button onclick="del()">Del</button>
+            <button onclick="display('/')" id="">/</button>
+            <button onclick="display('*')" id="">*</button>
+            <button onclick="display('7')" id="">7</button>
+            <button onclick="display('8')" id="">8</button>
+            <button onclick="display('9')" id="">9</button>
+            <button onclick="display('-')" id="">-</button>
+            <button onclick="display('4')" id="">4</button>
+            <button onclick="display('5')" id="">5</button>
+            <button onclick="display('6')" id="">6</button>
+            <button id="plus" onclick="display('+')" >+</button>
+            <button onclick="display('1')" id="">1</button>
+            <button onclick="display('2')" id="">2</button>
+            <button onclick="display('3')" id="">3</button>
+            <button onclick="display('0')" id="">0</button>
+            <button onclick="display('00')" id="">00</button>
+            <button onclick="display('.')" id="">.</button>
+            <button id="equal" onclick="calculate()" >=</button>
+        </div>
+</div>
+<script>
+        function display(n)
+        {
+        document.getElementById("outputscreen").value +=n
+        } 
+        function calculate()
+        {
+            let output= document.getElementById("outputscreen").value;
+            let result = eval(output)
+            document.getElementById("outputscreen").value =result;
+        }
+        function Clear()
+        {
+            document.getElementById("outputscreen").value ="";
+        }
+        function del()
+        {
+            let digit=document.getElementById("outputscreen").value;
+            document.getElementById("outputscreen").value=digit.slice(0,digit.length -1);
+        }
+
+</script>
+</body>
+</html>

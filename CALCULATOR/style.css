@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+.head{
+    text-shadow: 5PX 10PX 20PX  black;
+    color: rgb(183, 54, 76);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 50px;
+    /* background:linear-gradient(pink,lightblue); */
+    
+
+}
+.calculator{
+    
+        position: relative;
+        width: 340px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, .5),
+        -15px -15px 20px #fffb;
+        background:linear-gradient(pink,lightblue);
+       
+}
+.calculator .buttons{
+    position: relative;
+    display: grid;
+    
+    
+}
+.calculator .buttons .value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: red;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .1),
+    inset -5px -5px 20px #fff;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+    
+
+}
+.calculator .buttons button
+{
+    position: relative;
+    padding: 10px;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, .1),
+     -5px -5px 10px #fff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color:black;
+    border: 2px solid black,red;
+    box-shadow: rgba(0, 0, 0, .1),
+    -5px -5px -10px #fff;
+    border-radius:15px;
+}
+.calculator .buttons button:active
+{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .1),
+    inset -5px -5px 20px #fff;
+    color: red;
+
+}
+.calculator .buttons button#first
+{
+    grid-column: span 1;
+    border: 2px solid #edf1f4;
+}
+.calculator .buttons button#plus
+{
+    grid-row: span 2;
+   
+}
+button{
+    background:linear-gradient(rgb(183, 135, 135),rgb(231, 137, 169)) ;
+}*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+.head{
+    text-shadow: 5PX 10PX 20PX  black;
+    color: rgb(183, 54, 76);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 50px;
+    /* background:linear-gradient(pink,lightblue); */
+    
+
+}
+.calculator{
+    
+        position: relative;
+        width: 340px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, .5),
+        -15px -15px 20px #fffb;
+        background:linear-gradient(pink,lightblue);
+       
+}
+.calculator .buttons{
+    position: relative;
+    display: grid;
+    
+    
+}
+.calculator .buttons .value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: red;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .1),
+    inset -5px -5px 20px #fff;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+    
+
+}
+.calculator .buttons button
+{
+    position: relative;
+    padding: 10px;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, .1),
+     -5px -5px 10px #fff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color:black;
+    border: 2px solid black,red;
+    box-shadow: rgba(0, 0, 0, .1),
+    -5px -5px -10px #fff;
+    border-radius:15px;
+}
+.calculator .buttons button:active
+{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .1),
+    inset -5px -5px 20px #fff;
+    color: red;
+
+}
+.calculator .buttons button#first
+{
+    grid-column: span 1;
+    border: 2px solid #edf1f4;
+}
+.calculator .buttons button#plus
+{
+    grid-row: span 2;
+   
+}
+button{
+    background:linear-gradient(rgb(183, 135, 135),rgb(231,137,169));
+}
